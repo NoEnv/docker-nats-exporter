@@ -1,7 +1,7 @@
 FROM golang:1.12
 
 WORKDIR /go/src/github.com/nats-io/prometheus-nats-exporter
-RUN git clone --branch v0.3.0 https://github.com/nats-io/prometheus-nats-exporter.git .
+RUN git clone --branch v0.4.0 https://github.com/nats-io/prometheus-nats-exporter.git .
 
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -v -a -tags netgo -installsuffix netgo -ldflags "-s -w"
 
