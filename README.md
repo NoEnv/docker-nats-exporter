@@ -1,3 +1,5 @@
+[![Docker Pulls](https://badgen.net/docker/pulls/noenv/nats-exporter)](https://hub.docker.com/r/noenv/nats-exporter)
+
 ## docker-nats-exporter
 
 #### Description
