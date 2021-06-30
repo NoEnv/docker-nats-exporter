@@ -1,4 +1,4 @@
-FROM golang:1.16
+FROM golang:1.16-alpine3.14
 
 WORKDIR /go/src/github.com/nats-io/prometheus-nats-exporter
 RUN git clone --branch v0.8.0 https://github.com/nats-io/prometheus-nats-exporter.git .
