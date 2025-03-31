@@ -2,7 +2,7 @@ FROM golang:1.24-alpine3.21
 
 WORKDIR /go/src/github.com/nats-io/prometheus-nats-exporter
 RUN apk add --no-cache --purge --clean-protected -u git \
-  && git clone --branch v0.16.0 https://github.com/nats-io/prometheus-nats-exporter.git . \
+  && git clone --branch v0.17.2 https://github.com/nats-io/prometheus-nats-exporter.git . \
   && CGO_ENABLED=0 go build -v -a -tags netgo -installsuffix netgo -ldflags "-s -w"
 
 FROM scratch
