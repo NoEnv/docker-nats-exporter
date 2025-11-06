@@ -1,4 +1,4 @@
-FROM golang:1.24-alpine3.22
+FROM golang:1.25-alpine3.22
 
 WORKDIR /go/src/github.com/nats-io/prometheus-nats-exporter
 RUN apk add --no-cache --purge --clean-protected -u git \
